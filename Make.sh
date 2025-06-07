@@ -8,12 +8,10 @@ cmake ..
 make
 
 cd ..
-cp build/DAC .
 
 # run it at termux
 if [ "$1" = "--termux" ]; then
-  cp DAC $HOME
-  rm DAC
+  cp build/DAC $HOME
 
   cd $HOME
   chmod +x DAC
