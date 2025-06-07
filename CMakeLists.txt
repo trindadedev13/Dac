@@ -4,6 +4,7 @@ set(PROJECT_NAME DAC)
 project(${PROJECT_NAME})
 
 set(SOURCES
+    src/ast.c
     src/error.c
     src/main.c
     src/file.c
@@ -11,6 +12,7 @@ set(SOURCES
     src/tokenizer.c
     src/vector.c)
 set(HEADERS
+    include/dac/ast.h
     include/dac/bool.h
     include/dac/error.h
     include/dac/file.h
